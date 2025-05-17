@@ -1,9 +1,10 @@
-// Redux Toolkit store setup
 import { configureStore } from '@reduxjs/toolkit';
-// ...import slices
+import productsReducer from '../features/products/ProductsSlice';
 
 export const store = configureStore({
   reducer: {
-    // ...reducers
+    products: productsReducer,
+    // cart: cartReducer,
+    // user: userReducer,
   },
 });
